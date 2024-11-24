@@ -19240,3 +19240,26 @@ footer .footer-navbar .nav-item:last-child a {
   height: 50em;
 
 }
+.btn-gradient {
+    background: linear-gradient(to right, red, blue);
+    color: white; /* Color del texto */
+    border: none; /* Sin bordes */
+    padding: 15px 30px; /* Tamaño del botón */
+    border-radius: 50px; /* Bordes redondeados */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    font-weight: bold;
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 0 auto; /* Asegura el centrado automático */
+    position: relative;
+    left: 0; /* Reinicia posibles desplazamientos */
+    transform: translateX(7%); /* Ajusta con valores positivos o negativos si aún está descentrado */
+
+}
+
+.btn-gradient:hover {
+    transform: scale(1.05); /* Efecto de agrandamiento al pasar el mouse */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Sombra en hover */
+}
+
