@@ -5,16 +5,16 @@ if( ! empty( $_POST['email'] ) ) {
 	$enable_smtp = 'no'; // yes OR no
 
 	// Email Receiver Address
-	$receiver_email = 'info@domain.com';
+	$receiver_email = 'coleigocrearte58@gmail.com';
 
 	// Email Receiver Name for SMTP Email
-	$receiver_name 	= 'Your Name';
+	$receiver_name 	= 'Cliente pagina web';
 
 	// Email Subject
 	$subject = 'Contact form details';
 
 	// Google reCaptcha secret Key
-	$grecaptcha_secret_key = 'YOUR_SECRET_KEY';
+	$grecaptcha_secret_key = '6Lcn7IkqAAAAAPlZm-qQDAWgFtuij4900qWU1pAU';
 
 	$from 	= $_POST['email'];
 	$name 	= isset( $_POST['name'] ) ? $_POST['name'] : '';
@@ -136,12 +136,12 @@ if( ! empty( $_POST['email'] ) ) {
 			$mail = new PHPMailer\PHPMailer\PHPMailer();
 
 			$mail->isSMTP();
-			$mail->Host     = 'YOUR_SMTP_HOST'; // Your SMTP Host
+			$mail->Host     = 'smtp.gmail.com'; // Your SMTP Host
 			$mail->SMTPAuth = true;
-			$mail->Username = 'YOUR_SMTP_USERNAME'; // Your Username
-			$mail->Password = 'YOUR_SMTP_PASSWORD'; // Your Password
-			$mail->SMTPSecure = 'ssl'; // Your Secure Connection
-			$mail->Port     = 465; // Your Port
+			$mail->Username = 'colegiocrearte58@gmail.com'; // Your Username
+			$mail->Password = 'mpim smsg tfxn gcyg'; // Your Password
+			$mail->SMTPSecure = 'tsl'; // Your Secure Connection
+			$mail->Port     = 587; // Your Port
 			$mail->setFrom( $fields['Email'], $fields['Name'] );
 			
 			foreach( $toemailaddresses as $toemailaddress ) {
